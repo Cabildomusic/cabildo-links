@@ -33,10 +33,11 @@
       align-items: center;
       margin-bottom: 16px;
     }
-    .logo {
-      width: 72px; height: 72px; border-radius: 16px;
-      background: radial-gradient(100% 100% at 0% 0%, var(--accent) 0%, var(--accent-2) 100%);
-      display: grid; place-items: center; font-weight: 800; letter-spacing: .5px;
+    .logo img {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      object-fit: cover;
     }
     .band h1 { margin: 0; font-size: 1.6rem; }
     .band p { margin: 6px 0 0; color: var(--muted); }
@@ -70,7 +71,9 @@
   <div class="wrap">
     <div class="card">
       <header>
-        <div class="logo" aria-hidden="true">CAB</div>
+        <div class="logo">
+          <img src="cabildo-logo.png" alt="Cabildo logo">
+        </div>
         <div class="band">
           <h1>Cabildo</h1>
           <p>Alt-Latin rock collective from West Michigan — shows, music, merch & more.</p>
